@@ -1,0 +1,380 @@
+/*Barra navegacion*/
+.navbar{
+    padding: 2rem;
+    background-color:rgb(255, 255, 255);
+    
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content:  space-between;
+}
+
+/*Estilos generales*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif/*"Raleway", sans-serif/*'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+
+}
+
+.seccion-oscura{
+    color: white;
+    background-color:black ;
+    text-align: justify;
+    
+}
+
+.seccion-clara{
+    color: black;
+    background-color:white;
+    text-align: justify;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.seccion-text{
+    font-size:1.2rem ;
+}
+
+.btn-info{
+    font-size: 1.1rem;
+    margin: 20px;
+    background-color: #e0b3da;
+    color: white;
+   
+}
+
+.texto-negro{
+    color: black;
+}
+
+.texto-blanco{
+    color: white;
+}
+
+
+/*Seccion hero*/
+.hero{
+    background-color:white;
+    min-height: 450px;   
+    text-align: center;
+
+}
+
+.hero-principal{
+    padding: 3rem;
+
+}
+
+
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color:darkslategray
+}
+
+
+
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: darkslategrey
+}
+
+/*sobre mi*/
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+
+}
+
+/*CONTACTO*/
+.contacto .container{
+    max-width: 1100px;
+    min-width: 200px;
+    padding: 20px;
+} 
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background-color:#e0b3da;
+    border: 10px;
+    box-shadow: 0px 1px 4px 1px white ;
+
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color:white;
+    font-size: 1.2rem;
+    
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background-color:white ;
+    color:black
+}
+
+.contacto button i{
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i{
+    color: black
+}
+
+
+/*EXPERIENCIA*/
+
+
+  
+ 
+.experiencia{
+    
+    transform: translateY(50px);
+    
+   
+}
+
+
+
+
+.experiencia .columna{
+    padding:20;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover{
+    color: white;
+    background-color:black ;
+
+}
+
+.experiencia i{
+    font-size: 2.5rem;
+    color:white;
+    background-color: black;
+    padding: 8px 19px;
+    border-radius: 50px;
+}
+
+
+
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px, 0;
+}
+
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+
+}
+
+.badges{
+    margin: 5px;
+    
+
+}
+
+   
+/*proyectos*/
+
+
+
+.proyectos-recientes {
+    padding: 40px;
+    
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+    
+}
+
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+    
+}
+
+.container {
+    position: relative; /* Esto es importante para que el posicionamiento absoluto funcione correctamente */
+}
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+.overlay img {
+    max-width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto; /* Permite que la imagen conserve su proporción de aspecto */
+}
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 60px; /* Ajuste de la propiedad font-size */
+    margin: 10px;
+}
+
+ 
+/* Adaptable Resposive*/
+
+@media screen and(max-width: 400px){
+    .overlay p{
+        font-size: 18px;
+    }
+    .overla i{
+        font-size: 40px;
+    }
+}
+
+
+
+@media screen and (max-width:767px) {
+    .navbar-brand{
+        display: none;
+    }  
+}
+
+
+
+@media screen and (min-width:50px) {
+    .hero-inferior-imagen{
+        max-width:60px;
+        border: solid white;
+        
+    }
+}
+
+
+.col-6 img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    max-width: 100%; /* Limita el ancho máximo de la imagen al 100% del contenedor */
+}
+
+/*pie de pagina*/
+footer{
+    min-height: 200px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30 px;
+    font-family:"Raleway", sans-serif;
+}
+
+.iconos-redes-sociales a{
+    
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition :  all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid pink;
+}
+
+.iconos-redes-sociales a:hover i{
+    color:black;
+
+}
+
+.text-bg-pink {
+    background-color: #e0b3da;
+    color: white; /* Para asegurarse de que el texto sea legible en el fondo rosa */
+}
+p.seccion-texto#present {
+    text-align: justify;
+    }
+
+    
